@@ -31,6 +31,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -46,6 +59,19 @@
 				"name": "createItem",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -106,7 +132,11 @@
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"isOwner()": {
+					"details": "Returns true if the caller is the current owner."
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -139,10 +169,17 @@
 			]
 		},
 		"Users/hud/supply-chain-eth/ItemManager.sol": {
-			"keccak256": "0xef8c3d5c82b4e5f772f2a8f536b94ec24ff571aacbf4a1f1271b3e015735dec6",
+			"keccak256": "0x9b40eb028557f550c5feb39a66bc2d754d6dbfa39547839c3533dd70e94316b7",
 			"urls": [
-				"bzz-raw://80c05053067e700440ed306fe20513df1ef6e368c6e21f8ec1d945b4b83de1df",
-				"dweb:/ipfs/QmadAHPZL2tNWb2MCEAdYfCeVBf4mXUDJu6CFBAakRLDVx"
+				"bzz-raw://be0ab6e55303186ae6cfff8bd9503371c7bc52008b58091e58997965f2702c56",
+				"dweb:/ipfs/QmVRSgz5KnzVkYcXXheS3o99gGmovVJrNqCMjrcd6NQzVq"
+			]
+		},
+		"Users/hud/supply-chain-eth/Ownable.sol": {
+			"keccak256": "0xcdce8d473517466b112ac42385fccafd8267624eca139d95fe3baadc858caf92",
+			"urls": [
+				"bzz-raw://56adc120fdcdd949a617803668f12306456daf80b063039cbe442bd4f96936dc",
+				"dweb:/ipfs/Qmf9z427GarokN42wvGBz745SgEDEkXcuhmyPXZZJMGSbP"
 			]
 		}
 	},

@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"isOwner()": {
+					"details": "Returns true if the caller is the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Users/hud/supply-chain-eth/Ownable.sol": "Ownable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Users/hud/supply-chain-eth/Ownable.sol": {
+			"keccak256": "0xcdce8d473517466b112ac42385fccafd8267624eca139d95fe3baadc858caf92",
+			"urls": [
+				"bzz-raw://56adc120fdcdd949a617803668f12306456daf80b063039cbe442bd4f96936dc",
+				"dweb:/ipfs/Qmf9z427GarokN42wvGBz745SgEDEkXcuhmyPXZZJMGSbP"
+			]
+		}
+	},
+	"version": 1
+}
