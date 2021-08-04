@@ -36,7 +36,7 @@ class App extends Component {
       );
       console.error(error);
     }
-  };
+  }
 
   handleSubmit = async () => {
     const { cost, itemName } = this.state;
@@ -44,7 +44,7 @@ class App extends Component {
     let result = await this.itemManager.methods.createItem(itemName, cost).send({ from: this.accounts[0] });
     console.log(result);
     alert("Send "+cost+" Wei to "+result.events.SupplyChainStep.returnValues._address);
-  };
+  }
 
   handleInputChange = (event) => {
     const target = event.target;
@@ -72,5 +72,6 @@ class App extends Component {
       </div>
     );
   }
-
+}
 export default App;
+
