@@ -6,102 +6,72 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_itemIndex",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_step",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "_address",
+						"internalType": "contract ItemManager",
+						"name": "_parentContract",
 						"type": "address"
-					}
-				],
-				"name": "SupplyChainStep",
-				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_identifier",
-						"type": "string"
 					},
 					{
 						"internalType": "uint256",
 						"name": "_priceInWei",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
 					}
 				],
-				"name": "createItem",
-				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
-				"inputs": [
+				"stateMutability": "nonpayable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "index",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "items",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "paidWei",
 				"outputs": [
 					{
-						"internalType": "contract Item",
-						"name": "_item",
-						"type": "address"
-					},
-					{
-						"internalType": "enum ItemManager.SupplyChainSteps",
-						"name": "_step",
-						"type": "uint8"
-					},
-					{
-						"internalType": "string",
-						"name": "_identifier",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "priceInWei",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "_index",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "triggerDelivery",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_index",
-						"type": "uint256"
-					}
-				],
-				"name": "triggerPayment",
-				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -117,7 +87,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Users/hud/supply-chain-eth/ItemManager.sol": "ItemManager"
+			"Users/hud/supply-chain-eth/Item.sol": "Item"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
